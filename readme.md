@@ -1,7 +1,7 @@
 ## Why do I go with Backbone + Marionette + Knockout?
-  I used to be an AngularJS user, but I had to scratch my head whenever its magic too much happens behind for me. Also it was heavy and the learning curve was too much for me.
+  I used to be an AngularJS user, but I had to scratch my head whenever its magic too much happens behind for me. Also it was heavy and the learning curve was too much for me.<br/>
   I wanted to have non-opinionated thing with orchestrating awesome tools.
-  BMK suits my taste best as as result.
+  After a lot of research and consideration, BMK suits my taste best as a result.
 
 ## Is it a good Boilerplate?
   I am not an expert. I am still learning many things.<br/>
