@@ -1,4 +1,26 @@
-## Why do I go with Backbone + Marionette + Knockout?
+## Usage
+
+Install: `npm install -g generator-backbone-laser`
+
+Make a new directory and `cd` into it:
+```
+mkdir my-new-project && cd $_
+```
+
+Run `yo backbone-laser`, optionally passing an app name:
+```
+yo backbone-laser [app-name]
+```
+
+## Typical workflow
+
+```
+yo backbone # generates your application base and build workflow
+grunt serve # dev mode
+grunt build # build for production code
+```
+
+# Why do I go with Backbone + Marionette + Knockout?
   I used to be an AngularJS user, but I had to scratch my head whenever its magic too much happens behind for me. Also it was heavy and the learning curve was too much for me.<br/>
   I wanted to have non-opinionated thing with orchestrating awesome tools.
   After a lot of research and consideration, BMK suits my taste best as a result.
