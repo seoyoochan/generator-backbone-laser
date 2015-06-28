@@ -34,5 +34,8 @@
     "time-grunt": "^0.4.0",
     "karma-jasmine": "~0.3.5",
     "karma-sinon": "~1.0.4"
+  },
+  "scripts": {
+    "build": "./command/build.sh"
   }
 }

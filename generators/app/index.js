@@ -66,6 +66,7 @@ module.exports = yeoman.generators.Base.extend({
       mkdirp('app/scripts/modules/user/login');
       mkdirp('app/scripts/modules/user/lock');
       mkdirp('app/scripts/modules/user/profile');
+      mkdirp('command');
 
 
       this.fs.copy(
@@ -76,6 +77,11 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('_bower.json'),
         this.destinationPath('bower.json')
+      );
+
+      this.fs.copy(
+        this.templatePath('_build.sh'),
+        this.destinationPath('command/build.sh')
       );
 
     },
