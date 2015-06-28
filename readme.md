@@ -6,8 +6,7 @@
 ## Is it a good Boilerplate?
   I am not an expert. I am still learning many things.<br/>
   However, I try all of my best to follow best practices.
-  I really carefully structured scripts and styles with a lot of research and my experience.<br>
-  *I strongly believe modularization and grouping by feature not MVC is a right way to go.*<br/>
+  **I strongly believe modularization and grouping by feature layer, not MV* layer is a right way to go.**
 
 ## Styles Best Practices
   - Load via `main.scss` to correctly order styles
