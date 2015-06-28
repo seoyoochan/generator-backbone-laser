@@ -5,7 +5,7 @@
 
 ## Is it a good Boilerplate?
   I am not an expert. I am still learning many things.<br/>
-  However, I try all of my best to follow best practices.
+  However, I try all of my best to follow best practices.<br/>
   **I strongly believe modularization and grouping by feature layer, not MV* layer is a right way to go.**
 
 ## Styles Best Practices
