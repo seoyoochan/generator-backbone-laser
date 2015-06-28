@@ -1,7 +1,7 @@
 {
   "name": "generator-backbone-laser",
   "version": "0.0.0",
-  "description": "Yeoman generator",
+  "description": "Backbone-based, large-scale-app-ready boilerplate",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "seoyoochan/generator-backbone-laser",
@@ -10,21 +10,40 @@
     "email": "supergnee@gmail.com",
     "url": "https://github.com/seoyoochan"
   },
-  "scripts": {
-    "test": "mocha"
-  },
+  "scripts": {},
   "files": [
     "generators"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "Javascript",
+    "Knockout",
+    "Backbone",
+    "Marionette",
+    "RequireJS",
+    "Require",
+    "Karma",
+    "Spectacular",
+    "Jasmine",
+    "Sinon",
+    "i18next",
+    "jstimezonedetect",
+    "R.js",
+    "Font Awesome"
   ],
   "dependencies": {
     "yeoman-generator": "^0.19.0",
     "chalk": "^1.0.0",
-    "yosay": "^1.0.2"
+    "yosay": "^1.0.2",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "grunt-cli": "^0.1.13",
+    "underscore": "^1.6.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.36",
+    "karma-cli": "0.0.4",
+    "karma-jasmine": "^0.3.5",
+    "sinon": "^1.15.3"
   }
 }

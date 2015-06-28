@@ -1,1 +1,5 @@
+.idea
+.idea/.name
+.idea/*
+.idea/*.xml
 node_modules/

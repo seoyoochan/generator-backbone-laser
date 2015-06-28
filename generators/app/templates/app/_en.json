@@ -1,0 +1,9 @@
+{
+  "app": {
+    "app_name": "App Name",
+    "title": "<i class='fa fa-child'></i>Welcome to Backbone Laser!",
+    "p": "We're ready to aboard your ship, sir.<br/>Thank you.",
+    "locale": "Your Current Language: <span class='locale'></span>",
+    "timezone": "Your Current Timezone: <span class='tz'></span>"
+  }
+}
