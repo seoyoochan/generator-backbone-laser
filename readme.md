@@ -18,7 +18,8 @@
 ## Scripts Best Practices
   - Always create a module folder(+ submodules optionally)
   - Grouping and Separating by Feature (Feature Layer, No MV* Layer)
-  - Router must not know about view. It only invokes one centralized controller(Application controller) and one method.
+  - Router must not know about view.<br/>
+    It only invokes one centralized controller(Application controller) and one method.
   - Application controller loads all the rest of controllers
   - Each module has only one controller
   - Application view is responsible for rendering many diverse layout forms(1 column, 2 columns, 3 columns, and etc.)
@@ -27,14 +28,14 @@
 
 
 ## What this generator does for you?
-- Automatic Page Refreshing in Development Mode
-- The Fastest Optimzation in r.js
+- Liveload in Development Mode
+- The Fastest Optimzation in **r.js**
 - Caching is supported
 - Separation of dev and production code is well supported.
-  take a look at 'build/index.html' to learn to write code dependent on mode.
-  'build/index.html' is automatically distributed to app/dist folder.
+  take a look at `build/index.html` to learn to write code dependent on mode.
+  `build/index.html` is automatically distributed to `app/index.html` and `dist/index.html`
 - Timezone Detection
-- Browser Language Detection and Translation of App with *i18next plugin*
-- Reset Style with *Eric Meyer's Reset CSS*
+- Browser Language Detection and Translation of App with **i18next plugin**
+- Reset Style with **Eric Meyer's Reset CSS**
 - Font Awesome is ready
 - Shell scripting `npm build` command is ready out of `command/build.sh`
