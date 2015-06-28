@@ -28,6 +28,7 @@
 
 
 ## What this generator does for you?
+- It uses Libsass which is faster than ruby sass
 - Liveload in Development Mode
 - The Fastest Optimzation in **r.js**
 - Caching is supported
