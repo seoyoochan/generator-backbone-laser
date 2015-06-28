@@ -39,3 +39,4 @@
 - Reset Style with **Eric Meyer's Reset CSS**
 - Font Awesome is ready
 - Shell scripting `npm build` command is ready out of `command/build.sh`
+- Test with **Karma**, **Jasmine**, and **Sinon**
