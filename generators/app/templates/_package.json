@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
    "apache-server-configs": "^2.7.1",
+    "bower-requirejs": "^1.1.3",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.0",
     "grunt-bower-requirejs": "^2.0.0",
