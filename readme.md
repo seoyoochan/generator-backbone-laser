@@ -15,7 +15,7 @@ yo backbone-laser [app-name]
 ## Typical workflow
 
 ```
-yo backbone # generates your application base and build workflow
+yo backbone-laser # generates your application base and build workflow
 grunt serve # dev mode
 grunt build # build for production code
 ```
