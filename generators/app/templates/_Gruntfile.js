@@ -8,6 +8,9 @@ module.exports = function(grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  var modRewrite = require('connect-modrewrite');
+
+
   // Configurable paths
   var config = {
     app: 'app',
@@ -55,13 +58,15 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          middleware: function(connect) {
+          middleware: function(connect, options, middlewares) {
             return [
+              modRewrite(['^(\/+[a-zA-Z0-9]+)+?$ /#/$1/ [R,L,NE]']), // redirect to hash-based url
               connect.static('.tmp'),
               connect().use('/<%= config.app %>/scripts/libs', connect.static('./<%= config.app %>/scripts/libs')),
               connect.static(config.app)
             ];
           }
+
         }
       },
       test: {

@@ -1,0 +1,26 @@
+<form class="form">
+  <div class="field">
+  <input type="text" name="user[firstName]" id="firstName" placeholder="Firstname" class="firstname"
+  data-bind="value: firstName, event: { blur: validate.bind($data, 'firstName') }" />
+  <div class="error" data-bind="html: firstName_message"></div>
+  </div>
+
+  <div class="field">
+  <input type="text" name="user[lastName]" id="lastName" placeholder="Lastname" class="lastname"
+  data-bind="value: lastName, event: { blur: validate.bind($data, 'lastName') }" />
+  <div class="error" data-bind="html: lastName_message"></div>
+  </div>
+
+  <div class="field">
+    <input type="email" name="user[email]" id="email" placeholder="Email" class="email"
+           data-bind="value: email, event: { blur: validate.bind($data, 'email') }" />
+    <div class="error" data-bind="html: email_message"></div>
+  </div>
+  <div class="field">
+    <input type="password" name="user[password]" id="password" placeholder="Password" class="password" data-bind="value: password, event: { blur: validate.bind($data, 'password') }"  required="required"/>
+    <div class="error" data-bind="html: password_message"></div>
+  </div>
+  <div class="submit">
+    <input type="submit" name="commit" value="Sign Up" class="button" >
+  </div>
+</form>

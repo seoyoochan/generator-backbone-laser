@@ -1,4 +1,4 @@
-define(["jquery"], function($){
+define(["App", "jquery"], function(App, $){
 
   var main = function(){
 
@@ -9,7 +9,20 @@ define(["jquery"], function($){
     $.cookie("timezone", timezone);
 
 
+
     $(document).ready(function(){
+
+      $.ajax({
+        dataType: "json",
+        url: App.api_url + "/generics",
+        data: { locale: locale, timezone: timezone },
+        method: "POST"
+      }).done(function(response){
+        //console.log("response by APIController generics action " + response.message);
+      }).fail(function(xhr){
+        //console.log("failed to request for generics " + xhr.responseJSON.message);
+      });
+
 
       i18n.init({
         fallbackLng: "en",

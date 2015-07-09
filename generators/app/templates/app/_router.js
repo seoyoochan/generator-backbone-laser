@@ -1,9 +1,10 @@
-define(["backbone", "modules/core/ApplicationController"], function(Backbone, ApplicationController) {
+define(["App", "backbone", "modules/core/ApplicationController"], function(App, Backbone, ApplicationController) {
 
   var Router = Backbone.Router.extend({
     routes: {
       "": "welcome",
       "welcome": "welcome",
+      "user/registration": "registration",
       "*action": "wrongUrl"
     },
 
@@ -11,8 +12,12 @@ define(["backbone", "modules/core/ApplicationController"], function(Backbone, Ap
       new ApplicationController().welcome();
     },
 
+    registration: function(){
+      new ApplicationController().registration();
+    },
+
     wrongUrl: function(){
-      alert("Your url does not exist.");
+      App.App.Router.navigate("/", { trigger: true });
     }
 
   });

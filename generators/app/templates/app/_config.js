@@ -6,6 +6,7 @@ require.config({
     "modernizr",
     "jstzdetect",
     "jquery.cookie",
+    "jquery-deparam",
     "init"
   ],
   enforceDefine: false,
@@ -25,10 +26,17 @@ require.config({
     i18next: "libs/i18next/i18next",
     jstzdetect: "libs/jstzdetect/jstz.min",
     knockout: "libs/knockout/dist/knockout",
-    "jquery.cookie": "libs/jquery.cookie/jquery.cookie"
+    "jquery.cookie": "libs/jquery.cookie/jquery.cookie",
+    "jquery-deparam": "libs/jquery-deparam/jquery-deparam"
   },
   shim: {
     jquery: {
+      exports: "$"
+    },
+    "jquery-deparam": {
+      deps: [
+        "jquery"
+      ],
       exports: "$"
     },
     underscore: {
@@ -40,6 +48,13 @@ require.config({
         "jquery"
       ],
       exports: "Backbone"
+    },
+    knockout: {
+      exports: "ko"
+    },
+    "jquery.bbq": {
+      deps: ["jquery"],
+      exports: "$"
     },
     babysitter: {
       deps: [

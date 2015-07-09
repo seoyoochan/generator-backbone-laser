@@ -11,11 +11,16 @@ define(["exports", "backbone", "modules/core/router", "modules/core/ApplicationV
   exports.App.ApplicationView = new ApplicationView;
 
   exports.App.addInitializer(function(){
+
     Backbone.history.start();
+
   });
 
   // Link Router
   exports.App.Router = new Router();
+
+  // Store API endpoint
+  exports.App.api_url = "http://api.dev.com:3000/v1";
 
   // Expose your App for reuse
   return exports.App;

@@ -5,5 +5,22 @@
     "p": "We're ready to aboard your ship, sir.<br/>Thank you.",
     "locale": "Your Current Language: <span class='locale'></span>",
     "timezone": "Your Current Timezone: <span class='tz'></span>"
+  },
+  "user": {
+    "login": {
+      "email": {
+        "required": "Email is required.",
+        "regex": "It is not email format."
+      },
+      "firstName": {
+        "required": "Firstname is required."
+      },
+      "lastName": {
+        "required": "Lastname is required."
+      },
+      "password": {
+        "required": "Password is required."
+      }
+    }
   }
 }

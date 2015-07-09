@@ -1,3 +1,11 @@
 @import "utils/variables";
 @import "libs/reset";
 @import "../scripts/libs/font-awesome/scss/font-awesome";
+
+.error {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: red;
+	font-size: 11px;
+}

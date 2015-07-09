@@ -50,6 +50,7 @@ grunt build # build for production code
 
 
 ## What this generator does for you?
+- It demonstrates how to validate registartion form succintly with knockout & backbone & marionette!
 - It uses **libsass** which is faster than ruby sass
 - Liveload in Development Mode
 - The Fastest Optimzation in **r.js**

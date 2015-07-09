@@ -134,6 +134,31 @@ module.exports = yeoman.generators.Base.extend({
       );
 
       this.fs.copy(
+        this.templatePath('app/_registrationView.js'),
+        this.destinationPath('app/scripts/modules/user/registration/view.js')
+      );
+
+      this.fs.copy(
+        this.templatePath('app/_registrationModel.js'),
+        this.destinationPath('app/scripts/modules/user/registration/model.js')
+      );
+
+      this.fs.copy(
+        this.templatePath('app/_registrationViewModel.js'),
+        this.destinationPath('app/scripts/modules/user/registration/viewModel.js')
+      );
+
+      this.fs.copy(
+        this.templatePath('app/_registrationController.js'),
+        this.destinationPath('app/scripts/modules/user/registration/controller.js')
+      );
+
+       this.fs.copy(
+        this.templatePath('app/_registration.html'),
+        this.destinationPath('app/templates/user/registration.html')
+      );
+
+      this.fs.copy(
         this.templatePath('app/_reset.scss'),
         this.destinationPath('app/styles/libs/_reset.scss')
       );

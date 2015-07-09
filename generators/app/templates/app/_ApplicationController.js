@@ -7,9 +7,10 @@
 define([
     "App", "backbone", "marionette",
     // load a controller of your module
-    "modules/welcome/controller"
+    "modules/welcome/controller",
+    "modules/user/registration/controller"
   ],
-  function(App, Backbone, Marionette, welcome){
+  function(App, Backbone, Marionette, welcome, registration){
 
     return Marionette.Controller.extend({
 
@@ -20,6 +21,10 @@ define([
 
       welcome: function(){
         new welcome();
+      },
+
+      registration: function(){
+        new registration();
       }
 
     });

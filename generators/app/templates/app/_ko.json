@@ -5,5 +5,22 @@
     "p": "선장님의 배에 탑승할 준비가 되었습니다.<br/>고마워요.",
     "locale": "현재 언어: <span class='locale'></span>",
     "timezone": "현재 타임존: <span class='tz'></span>"
+  },
+  "user": {
+    "login": {
+      "email": {
+        "required": "이메일은 필수 입력항목입니다.",
+        "regex": "이메일 형식이 아닙니다."
+      },
+      "firstName": {
+        "required": "이름은 필수 입력항목입니다."
+      },
+      "lastName": {
+        "required": "성은 필수 입력항목입니다."
+      },
+      "password": {
+        "required": "패스워드는 필수 입력항목입니다."
+      }
+    }
   }
 }
