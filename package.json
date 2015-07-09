@@ -1,6 +1,6 @@
 {
   "name": "generator-backbone-laser",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Backbone Scalable Boilerplate with Best Practices",
   "license": "MIT",
   "main": "app/index.js",
